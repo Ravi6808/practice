@@ -1,0 +1,20 @@
+<div class="container" ng-controller="homeController">
+    <div class="row "> 
+        <div class="col-sm-3 text-center" ng-repeat="b in myWelcome">
+            <a href="details.html">
+              <img src='images/a1.jpg' alt="shirt" width="200" height="200" />
+              <div>
+                <h3>{{b.name}}</h1>
+                  <h3>
+                    <i class="fa fa-rupee"></i>{{b.price}}</h3>
+              </div>
+            </a>
+            <div>
+              <input type="button" class="btn btn-sm" ng-click="count = count + 1" 
+              id="cart_btn" value="Add To Cart" />
+                <span class="glyphicon glyphicon-shopping-cart">
+                  <b>{{ count }}</b>
+                </span>
+            </div>
+            </div>
+              </div>
